@@ -1,145 +1,219 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Future of Egocentric Vision</title>
-  <meta name="description" content="Future of Egocentric Vision">
-  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/egofuture/">
-<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/favicon.ico">
+<head>
+    <title>An Outlook into the Future of Egocentric Vision</title>
+    <meta property="og:title" content="An Outlook into the Future of Egocentric Vision" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
 
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	
+	h1 {
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
 
-
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
 </head>
 
+<body>
+    <center>
+        <span style="font-size:42px">An Outlook into the Future of Egocentric Vision</span>
+        <br>
+            <p style="text-align: center;">
+                <a href="https://chiaraplizz.github.io/" style="font-size:24px">Chiara Plizzari<sup> 1*</sup></a>
+                      
+                <a href="https://ezius07.github.io/" style="font-size:24px">Gabriele Goletto<sup> 1*</sup></a>
+                      
+                <a href="https://www.antoninofurnari.it/" style="font-size:24px">Antonino Furnari<sup> 2*</sup></a>
+                      
+                <a href="https://sid2697.github.io" style="font-size:24px">Siddhant Bansal<sup> 3*</sup></a>
+                      <br>
+                <a href="https://iplab.dmi.unict.it/ragusa/" style="font-size:24px">Francesco Ragusa<sup> 2*</sup></a>
+                      
+                <a href="https://www.dmi.unict.it/farinella/" style="font-size:24px">Giovanni Maria Farinella<sup> 2</sup></a>
+                      
+                <a href="https://dimadamen.github.io/" style="font-size:24px">Dima Damen<sup> 3</sup></a>
+                      
+                <a href="http://www.tatianatommasi.com/" style="font-size:24px">Tatiana Tommasi<sup> 2</sup></a>
+                      
+            </p>
+            <p style="text-align: center;">
+            <sup>1</sup>Politecnico di Torino, Italy  <sup>2</sup>University of Catania, Italy  <sup>3</sup>University of Bristol, UK <br>*denotes equal contribution
+            </p>
+          		<span style="font-size:30px">IJCV 2024</span>
+	  		  <table align=center width=650px>
+	  			  <tr>
+	  	              <td align=center width=150px>
+        <br>
+	  					<center>
+	  						<span style="font-size:22px"><a href='https://arxiv.org/abs/1603.08511'> Paper [ArXiv]</a></span><br>
+		  		  		</center>
+		  		  	  </td>
+		  		  	 </tr>
+	  			  <tr>
+			  </table>
+          </center>
+  		  </table>
 
-  <body>
+          <br>
+<table align="center" width="850px">
+    <tr>
+        <td width="850px">
+            <center>
+                <a href="./assets/survey_paper_diagram_collage.png">
+                    <img class="rounded" src="./assets/survey_paper_diagram_collage.png" width="850px"></a><br>
+            </center>
+        </td>
+    </tr>
+    <td width="400px">
+        <center>
+            <span style="font-size:14px">
+                We envision a wearable device, <i>EgoAI</i>, that enables in-situ multimodal sensing from the wearer's perspective and provides ego-based assistance. The envisaged future takes the shape of five distinctive use cases that are grounded in either a location or occupation. For example, Ego-Designer, Ego-Worker, and Ego-Tourist shown here.
+            </span>
+        </center>
+    </td>
+</table>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	  </button>
+<hr style="border-width: 2px;" />
 
-    <a class="navbar-brand" href="http://localhost:4000/">Siddhant Bansal</a>
-	</div>
-	<div class="collapse navbar-collapse" id="navbar-collapse-1">
-	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="http://localhost:4000/">Home</a></li>
-		<li><a href="http://localhost:4000/publications">Publications</a></li>
-		<li><a href="http://localhost:4000/projects">Projects</a></li>
-		<li><a href="http://localhost:4000/experience">Experience</a></li>
-		<li><a href="https://sid2697.github.io/Blog_Sid">Blog</a></li>
-	  </ul>
-	</div>
-  </div>
-</div>
+<table align=center width=850px>
+    <center><h1>Abstract</h1></center>
+    <tr>
+        <td>
+            What will the future be? We wonder! In this survey, we explore the gap between current research in egocentric vision and the ever-anticipated future, where wearable computing, with outward facing cameras and digital overlays, is expected to be integrated in our every day lives. To understand this gap, the article starts by envisaging the future through character-based stories, showcasing through examples the limitations of current technology. We then provide a mapping between this future and previously defined research tasks. For each task, we survey its seminal works, current state-of-the-art methodologies and available datasets, then reflect on shortcomings that limit its applicability to future research. Note that this survey focuses on software models for egocentric vision, independent of any specific hardware. The paper concludes with recommendations for areas of immediate explorations so as to unlock our path to the future always-on, personalised and life-enhancing egocentric vision.
+        </td>
+    </tr>
+</table>
 
+<hr style="border-width: 2px;" />
 
-    <div class="container-fluid">
-      <div class="row">
-        <div id="gridid" class="col-sm-12">
-  <h1 align="center">An Outlook into the Future of Egocentric Vision</h1>
-
-<p style="text-align: center;">
-<a href="https://chiaraplizz.github.io/" style="font-size:24px"> Chiara Plizzari*</a>
-      
-<a href="https://ezius07.github.io/" style="font-size:24px"> Gabriele Goletto*</a>
-      
-<a href="https://www.antoninofurnari.it/" style="font-size:24px"> Antonino Furnari*</a>
-      
-<a href="https://sid2697.github.io" style="font-size:24px"> Siddhant Bansal*</a>
-      
-<a href="https://iplab.dmi.unict.it/ragusa/" style="font-size:24px"> Francesco Ragusa*</a>
-      
-<a href="https://www.dmi.unict.it/farinella/" style="font-size:24px"> Giovanni Maria Farinella</a>
-      
-<a href="https://dimadamen.github.io/" style="font-size:24px"> Dima Damen</a>
-      
-<a href="http://www.tatianatommasi.com/" style="font-size:24px"> Tatiana Tommasi</a>
-      
-</p>
-
-<p style="text-align: center;">
-<a href="https://arxiv.org/abs/2308.07123" style="font-size:32px"> Paper</a>
-      
-</p>
-
-<center>
-<figure>
-    <div id="projectid">
-    <img src="http://localhost:4000/images/projectpic/survey_paper_diagram_collage.png" width="900px" />
+<div align="center">
+    <h1>Imagining the Future</h1>
+    <table align="center" width="850px">
+        <tr>
+            <td>
+                Here we showcase the five scenarios in which EgoAI is envisioned to be used. Each scenario is grounded in a specific location or occupation. Click on the left or right arrows to navigate through the scenarios OR let the images change automatically (every 10 seconds).
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div style="position: relative;">
+        <img src="./assets/arrow_left.png" style="position: absolute; top: 40%; width: 80px; left: 190px; transform: translateY(-50%); cursor: pointer;" onclick="showPrevImage()">
+        <img src="./assets/arrow_right.png" style="position: absolute; top: 40%; right: 190px; width: 80px; transform: translateY(-50%); cursor: pointer;" onclick="showNextImage()">
+        <img id="image1" class="rounded" src="./assets/claire_tourist.png" style="display: block; height: 1100px;">
+        <img id="image2" class="rounded" src="./assets/marco_electrician.png" style="display: none; height: 1100px;">
+        <img id="image3" class="rounded" src="./assets/sam_home.png" style="display: none; height: 1100px;">
+        <img id="image4" class="rounded" src="./assets/stanley_artist.png" style="display: none; height: 1100px;">
+        <img id="image5" class="rounded" src="./assets/judy_officer.png" style="display: none; height: 1100px;">
+        <br>
+        <div id="caption1" style="display: block; font-size: 14px">EgoAI accompanies Claire throughout her itinerary in Turin</div>
+        <div id="caption2" style="display: none; font-size: 14px">EgoAI assists Marco from the start of his day until its conclusion</div>
+        <div id="caption3" style="display: none; font-size: 14px">EgoAI helps Sam prepare dinner and keeps him entertained with interactive and immersive experiences</div>
+        <div id="caption4" style="display: none; font-size: 14px">EgoAI helps Stanley, the scenographer, and all the crew during movie production</div>
+        <div id="caption5" style="display: none; font-size: 14px">EgoAI assists Judy during her day to keep the city safe</div>
     </div>
-    <p>&nbsp;</p>
-    <figcaption style="text-align: justify; color:Black; font-size:17px">
-    We envision a wearable device, <i>EgoAI</i>, that enables in-situ multimodal sensing from the wearer's perspective and provides ego-based assistance. The envisaged future takes the shape of five distinctive use cases that are grounded in either a location or occupation. For example, Ego-Designer, Ego-Worker, and Ego-Tourist shown here.
-    </figcaption>
-</figure>
-</center>
-
-<hr style="border-width: 2px;" />
-
-<h1 align="center"><span>Abstract</span></h1>
-<p><br /></p>
-<div style="text-align: justify; color:Black; font-size:18px">
-  <p>What will the future be? We wonder! In this survey, we explore the gap between current research in egocentric vision and the ever-anticipated future, where wearable computing, with outward facing cameras and digital overlays, is expected to be integrated in our every day lives. To understand this gap, the article starts by envisaging the future through character-based stories, showcasing through examples the limitations of current technology. We then provide a mapping between this future and previously defined research tasks. For each task, we survey its seminal works, current state-of-the-art methodologies and available datasets, then reflect on shortcomings that limit its applicability to future research. Note that this survey focuses on software models for egocentric vision, independent of any specific hardware. The paper concludes with recommendations for areas of immediate explorations so as to unlock our path to the future always-on, personalised and life-enhancing egocentric vision.</p>
 </div>
 
 <hr style="border-width: 2px;" />
 
-<p>      </p>
-<h1 align="center"><span>Imagining the Future</span></h1>
-
-<p> </p>
 <center>
-<figure>
-		<div id="projectid">
-    <img src="http://localhost:4000/images/projectpic/two_stories.png" width="900px" />
-		</div>
-    <p>&nbsp;</p>
-    <figcaption style="text-align: justify; color:Black; font-size:17px">
-    Here we show character story for two scenarios Ego-Home and Ego-Police. These stories envision the future of egocentric vision. For example, EgoAI helps Sam prepare dinner and keeps him entertained with interactive and immersive experiences. In another scenario, EgoAI assists Judy during her day to keep the city safe.
-    </figcaption>
-</figure>
+    <h1>
+        From Narratives to Research Tasks
+    </h1>
 </center>
+
+<table align="center" width="850px">
+    <tr>
+        <td width="850px">
+            <center>
+                <a href="./assets/stories_link.png">
+                    <img class="rounded" src="./assets/stories_link.png" width="850px"></a><br>
+            </center>
+        </td>
+    </tr>
+    <td width="400px">
+        <center>
+            <span style="font-size:14px">
+                We connect the narratives in our stories to research tasks in egocentric vision. For each of the use case, we show the corresponding research tasks, along with the specific part of the story where the tasks are occurring. For example, for Ego-Home we have Section <span style="color:#F53A3A">4.2</span> on 3D Scene Understanding corresponding to task <span style="color:#3dc1c1">1</span>, <span style="color:#3dc1c1">2</span>, <span style="color:#3dc1c1">3</span>, <span style="color:#3dc1c1">4</span>, <span style="color:#3dc1c1">7</span>, <span style="color:#3dc1c1">8</span>, and <span style="color:#3dc1c1">9</span> in the story.
+            </span>
+        </center>
+    </td>
+</table>
 
 <hr style="border-width: 2px;" />
 
-<p>      </p>
-<h1 align="center"><span>From Narratives to Research Tasks</span></h1>
-
-<p> </p>
-<center>
-<figure>
-		<div id="projectid">
-    <img src="http://localhost:4000/images/projectpic/stories_link.png" width="900px" />
-		</div>
-    <p>&nbsp;</p>
-    <figcaption style="text-align: justify; color:Black; font-size:17px">
-    We connect the narratives in our stories to research tasks in egocentric vision. For each of the use case, we show the corresponding research tasks, along with the specific part of the story where the tasks are occurring.
-    </figcaption>
-</figure>
-</center>
-<p> </p>
-
-<hr style="border-width: 2px;" />
-
-<p>      </p>
 <h1 align="center"><span>Research Tasks and Capabilities</span></h1>
 
-<p> </p>
+<table align="center" width="850px">
+    <tr>
+        <td>
+            We explore in detail various egocentric vision tasks. We focus on <i>seminal works</i>, <i>state-of-the-art methods</i>, <i>datasets</i>, and <i>for the future</i> for the following tasks:
+        </td>
+    </tr>
+</table>
 
-<div style="text-align: justify; color:Black; font-size:20px">
-  <p>We explore in detail various egocentric vision tasks. We focus on <i>seminal works</i>, <i>state-of-the-art methods</i>, <i>datasets</i>, and <i>for the future</i> for the following tasks:</p>
-</div>
-<p><br /></p>
+  <p><br /></p>
 <div align="center" style="font-size: 20px;">
 
   <table>
@@ -187,50 +261,86 @@
 
 <hr style="border-width: 2px;" />
 
-<p>Please consider citing if you make use of the work:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{plizzari2024outlook,
-      title={An Outlook into the Future of Egocentric Vision}, 
-      author={Chiara Plizzari and Gabriele Goletto and Antonino Furnari and Siddhant Bansal and Francesco Ragusa and Giovanni Maria Farinella and Dima Damen and Tatiana Tommasi},
-      year={2024},
-      journal={International Journal of Computer Vision},
-}
-</code></pre></div></div>
+<table align="center" width="850px">
+    <td>
+        <p>Please consider citing if you make use of the work:</p>
+    </td>
+    <tr>
+        <td width="850px">
+            <code>
+                @article{plizzari2024outlook,<br>
+                title={An Outlook into the Future of Egocentric Vision},<br> 
+                author={Chiara Plizzari and Gabriele Goletto and Antonino Furnari and Siddhant Bansal and Francesco Ragusa and Giovanni Maria Farinella and Dima Damen and Tatiana Tommasi},<br>
+                year={2024},<br>
+                journal={International Journal of Computer Vision}}<br>
+        </code>
+        </td>
+    </tr>
+</table>
 
-<p> </p>
-<p> </p>
+<hr style="border-width: 2px;" />
 
-</div>
+<table align="center" width="850px" style="font-size: 16px">
+    <tr>
+        <td width=400px>
+            <center>
+                <h1>
+                    Acknowledgements
+                </h1>
+            </center>
+            We thank Fritz J. Rustan, Illustrator in 99designs, for the fruitful and close collaboration to produce the EgoAI illustrations (Fig 1 - Fig 5). <br>We thank Mirco Planamente for early discussions on this survey and initial collection of relevant papers. <br>Research at the University of Bristol is supported by EPSRC Program Grant Visual AI EP/T028572/1. D. Damen is supported by EPSRC Fellowship UMPIRE EP/T004991/1. <br>Research at University of Catania has been supported by the project Future Artificial Intelligence Research (FAIR) – PNRR MUR Cod. PE0000013 - CUP: E63C22001940006. <br>T. Tommasi is supported by the project FAIR - Future Artificial Intelligence Research and received funding from the European Union Next-GenerationEU (PIANO NAZIONALE DI RIPRESA E RESILIENZA (PNRR) – MISSIONE 4 COMPONENTE 2, INVESTIMENTO 1.3 – D.D. 1555 11/10/2022, PE00000013). C. Plizzari and G. Goletto acknowledge travel support from ELISE (GA no 951847). G. Goletto is supported by PON “Ricerca e Innovazione” 2014-2020 – DM 1061/2021 funds.
+        </td>
+    </tr>
+</table>
 
-      </div>
-    </div>
+<script>
+    var currentImage = 1;
 
-    <div id="footer" class="panel">
-  <div class="panel-footer">
-	<div class="container-fluid">
-	  <div class="row">
-		<div class="col-sm-5">
+    function showImage(imageNumber) {
+        // Hide all images
+        document.getElementById("image1").style.display = "none";
+        document.getElementById("image2").style.display = "none";
+        document.getElementById("image3").style.display = "none";
+        document.getElementById("image4").style.display = "none";
+        document.getElementById("image5").style.display = "none";
+        // Hide all captions
+        document.getElementById("caption1").style.display = "none";
+        document.getElementById("caption2").style.display = "none";
+        document.getElementById("caption3").style.display = "none";
+        document.getElementById("caption4").style.display = "none";
+        document.getElementById("caption5").style.display = "none";
 
-		  <p>&copy 2022 Siddhant Bansal. Site made with <a href="https://jekyllrb.com">Jekyll</a>.</p>
-		   <p>  </p><p>
+        // Show the selected image and caption
+        document.getElementById("image" + imageNumber).style.display = "block";
+        document.getElementById("caption" + imageNumber).style.display = "block";
+        currentImage = imageNumber;
+    }
 
+    function showPrevImage() {
+        if (currentImage > 1) {
+            showImage(currentImage - 1);
+        } else {
+            showImage(5);
+        }
+    }
 
-		</div>
-		<div class="col-sm-5">
-		</div>
-    <div class="col-sm-5">
-		</div>
-		<div class="col-sm-5">
-		</div>
-	  </div>
-	</div>
-  </div>
-</div>
+    function showNextImage() {
+        if (currentImage < 5) {
+            showImage(currentImage + 1);
+        } else {
+            showImage(1);
+        }
+    }
+    
+    function autoChangeImage() {
+        showNextImage();
+        setTimeout(autoChangeImage, 10000); // Change image after 10 seconds
+    }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    // Start the self-timer
+    autoChangeImage();
+</script>
 
-
-  </body>
-
+</body>
 </html>
